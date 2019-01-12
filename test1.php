@@ -2,35 +2,29 @@
 /**
  * Created by PhpStorm.
  * User: Computer of Linh
- * Date: 1/10/2019
- * Time: 11:55 PM
+ * Date: 1/11/2019
+ * Time: 10:35 PM
  */
 
 class test1
 {
-    protected $_name;
-
-    /**
-     * test1 constructor.
-     */
-
-
-    /**
-     * @return mixed
-     */
-    public function getName()
+    public  function  __construct()
     {
-        return $this->_name;
+        $function = "doSomeThing";
+        $this->$function("Hello");
     }
 
-    /**
-     * @param mixed $name
-     */
-    public function setName($name)
-    {
-        $this->_name = $name;
+    private function doSomeThing($string){
+        echo $string;
     }
-
-
 }
 
+new test1();
+
+$myarray = [ "Hello", "World" ];
+
+
+$array = array([1, 2, 3, 4, 5, 6, 9, 12]);
+foreach ($array as $p){
+    echo  $p;
+}
